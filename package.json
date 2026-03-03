@@ -10,9 +10,11 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "next": "15.3.4",
+    "next": "^15.5.12",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "rough-notation": "^0.5.1",
+    "wired-elements": "^3.0.0-rc.6"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

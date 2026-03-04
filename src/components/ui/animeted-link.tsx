@@ -1,6 +1,7 @@
 'use client'
 
 import { LinkAnimation } from '@/types'
+import Link from 'next/link'
 import { useEffect, useRef } from 'react'
 import { annotate } from 'rough-notation'
 import { RoughAnnotation } from 'rough-notation/lib/model'
@@ -10,11 +11,13 @@ export function AnimetedLink({
   children,
   className,
   linkAnimation,
+  onClick,
 }: {
   href: string
   children: React.ReactNode
   className?: string
   linkAnimation?: LinkAnimation
+  onClick?: () => void
 }) {
   const linkRef = useRef<HTMLAnchorElement>(null)
   const anotacaoRef = useRef<RoughAnnotation | null>(null)
@@ -45,14 +48,17 @@ export function AnimetedLink({
   }, [])
 
   return (
-    <a
+    <Link
       href={href}
       ref={linkRef}
       onMouseEnter={() => anotacaoRef.current?.show()}
       onMouseLeave={() => anotacaoRef.current?.hide()}
+      onClick={() => {
+        if (onClick) onClick()
+      }}
       className={`cursor-pointer transition-colors ${className}`}
     >
       {children}
-    </a>
+    </Link>
   )
 }

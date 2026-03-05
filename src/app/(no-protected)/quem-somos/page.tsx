@@ -1,6 +1,6 @@
 export default function QuemSomosPage() {
   return (
-    <div className="flex h-[200vh] w-full flex-col gap-20 px-20 py-5">
+    <div className="flex w-full flex-col gap-20 px-20 py-5">
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi error
         provident omnis? Aliquam quidem nam eius doloremque quo architecto

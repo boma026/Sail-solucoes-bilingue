@@ -80,7 +80,7 @@ export function Header() {
       </div>
 
       {menuButtonIsOpen && (
-        <div className="font-hand bg-background/90 absolute flex w-full flex-col items-start gap-3 px-10 pt-4 pb-5 shadow-[0_15px_30px_-10px_rgba(26,54,93,0.08)] backdrop-blur-md sm:px-20 md:px-40 lg:hidden">
+        <div className="font-hand bg-background/90 absolute z-50 flex w-full flex-col items-start gap-3 px-10 pt-4 pb-5 shadow-[0_15px_30px_-10px_rgba(26,54,93,0.08)] backdrop-blur-md sm:px-20 md:px-40 lg:hidden">
           {NAV_LINKS.map((link) => (
             <div key={link.href} className="w-full">
               <AnimetedLink

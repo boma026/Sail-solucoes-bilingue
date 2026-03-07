@@ -13,6 +13,8 @@
     "next": "^15.5.12",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-rough-notation": "^1.0.8",
+    "react-wired-elements": "^0.1.6",
     "rough-notation": "^0.5.1",
     "wired-elements": "^3.0.0-rc.6"
   },

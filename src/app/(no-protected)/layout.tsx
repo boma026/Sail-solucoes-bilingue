@@ -1,3 +1,4 @@
+import { Footer } from '@/components/common/footer'
 import { Header } from '@/components/common/header'
 
 export default function MainNoProtectedLayout({
@@ -9,7 +10,11 @@ export default function MainNoProtectedLayout({
     <div className="flex h-screen flex-col">
       <Header />
 
-      <main className="flex-1 overflow-y-auto">{children}</main>
+      <div className="flex-1 overflow-y-auto scroll-smooth">
+        <main>{children}</main>
+
+        <Footer />
+      </div>
     </div>
   )
 }

@@ -1,10 +1,11 @@
 'use client'
 
-import Image from 'next/image'
-import { AnimetedLink } from '../ui/animeted-link'
-import { SketchMenuButton } from '../ui/sketch-menu-button'
+import { AnimetedLink } from '../ui/buttons/animeted-link'
+import { SketchMenuButton } from '../ui/buttons/sketch-menu-button'
 import { useState } from 'react'
-import { SketchArrowRight } from '../ui/sketch-arrow-right'
+import { SketchArrowRight } from '../ui/icons/sketch-arrow-right'
+import SailLogo from '../ui/illustrations/sail-logo'
+import SailName from '../ui/illustrations/sail-name'
 
 const NAV_LINKS = [
   { label: 'Home', href: '/', color: 'sail-red' },
@@ -33,12 +34,7 @@ export function Header() {
     <header>
       <div className="font-hand flex h-24 w-full items-center justify-between px-10 py-5 shadow-[0_4px_30px_rgba(26,54,93,0.07)] md:px-20">
         <div className="flex flex-col items-center">
-          <Image
-            src="/images/logo_gerado_pelo_gemini.png"
-            alt="Logo Sail"
-            width={40}
-            height={24}
-          />
+          <SailLogo width={60} height={50} />
           <AnimetedLink
             href="/"
             linkAnimation={{
@@ -48,9 +44,8 @@ export function Header() {
               animationDuration: 300,
             }}
           >
-            <h1 className="text-2xl font-bold">Sail</h1>
+            <SailName width={64} height={32} />
           </AnimetedLink>
-          {/*<h3 className="text-sm">Soluções Bilíngues</h3>*/}
         </div>
 
         <div className="flex items-center gap-15 max-lg:hidden">

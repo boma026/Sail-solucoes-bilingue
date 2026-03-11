@@ -2,7 +2,7 @@
 
 import { SketchButton } from '@/components/ui/buttons/sketch-button'
 import BoyMap from '@/components/ui/illustrations/boy-map'
-import GirlWithBow from '@/components/ui/illustrations/girl-with-bow'
+import GirlReading from '@/components/ui/illustrations/girl-reading'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
@@ -30,7 +30,7 @@ export default function Home() {
         </WiredCard>
       </section>
 
-      <section className="flex flex-col items-center gap-8">
+      <section className="flex flex-col items-center gap-3 md:gap-8">
         <div className="relative flex flex-col items-center gap-3">
           <h1 className="flex flex-col items-center text-4xl font-semibold">
             <p className="text-center">Navegando no bilinguismo,</p>
@@ -41,15 +41,15 @@ export default function Home() {
             A jornada bilíngue da sua escola começa aqui.
           </h3>
 
-          <GirlWithBow
+          <GirlReading
             width={128}
             height={128}
-            className="absolute -right-25 -bottom-34"
+            className="md:absolute md:-right-25 md:-bottom-32"
           />
           <BoyMap
             width={128}
             height={128}
-            className="absolute -bottom-31 -left-25"
+            className="hidden md:absolute md:-bottom-29 md:-left-25 md:block"
           />
         </div>
 

@@ -1,10 +1,16 @@
 import type { Metadata } from 'next'
-import { Quicksand } from 'next/font/google'
+import { Quicksand, Bad_Script } from 'next/font/google'
 import './globals.css'
 
 const quicksand = Quicksand({
   subsets: ['latin'],
   variable: '--font-main',
+})
+
+const vibur = Bad_Script({
+  subsets: ['latin'],
+  variable: '--font-handwritten',
+  weight: '400',
 })
 
 export const metadata: Metadata = {
@@ -19,7 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${quicksand.variable} antialiased`}>{children}</body>
+      <body className={`${quicksand.variable} ${vibur.variable} antialiased`}>
+        {children}
+      </body>
     </html>
   )
 }

@@ -32,7 +32,7 @@ export function Header() {
 
   return (
     <header>
-      <div className="font-hand flex h-24 w-full items-center justify-between px-10 py-5 shadow-[0_4px_30px_rgba(26,54,93,0.07)] md:px-20">
+      <div className="font-hand flex h-25 w-full items-center justify-between px-10 py-5 shadow-[0_4px_30px_rgba(26,54,93,0.07)] md:px-20">
         <div className="flex flex-col items-center">
           <SailLogo width={60} height={50} />
           <AnimetedLink

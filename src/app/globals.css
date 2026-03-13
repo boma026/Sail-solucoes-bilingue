@@ -1,18 +1,10 @@
 @import 'tailwindcss';
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Indie+Flower&display=swap');
-
-@import 'tailwindcss';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Indie+Flower&display=swap');
-
 :root {
   --background: #f9f9f7;
   --foreground: #2c2c2c;
   --text-muted: #6b7280;
   --surface: #ffffff;
-
-  --font-main: 'Montserrat', sans-serif;
-  --font-handwritten: 'Indie Flower', cursive;
 
   --sail-blue-deep: #1a365d; /* Azul profundo (Alto mar / Confiança) */
   --sail-blue-wave: #0ea5e9; /* Azul vibrante (Água clara / Dinamismo) */

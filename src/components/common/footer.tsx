@@ -1,9 +1,9 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { SketchEmailIcon } from '../ui/sketch-email-icon'
-import { SketchInstagramIcon } from '../ui/sketch-instagram-icon'
-import { SketchPhoneIcon } from '../ui/sketch-phone-icon'
+import { SketchEmailIcon } from '../ui/icons/sketch-email-icon'
+import { SketchInstagramIcon } from '../ui/icons/sketch-instagram-icon'
+import { SketchPhoneIcon } from '../ui/icons/sketch-phone-icon'
 import dynamic from 'next/dynamic'
 
 export function Footer() {

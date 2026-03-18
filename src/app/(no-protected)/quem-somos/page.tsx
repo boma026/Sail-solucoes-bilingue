@@ -1,4 +1,5 @@
 'use client'
+import { SketchButton } from '@/components/ui/buttons/sketch-button'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
@@ -23,8 +24,8 @@ export default function QuemSomos() {
           <WiredCard elevation={2} className="p-1">
             <div className="relative h-64 w-64 overflow-hidden rounded-full border-4 border-dashed border-gray-200 md:h-80 md:w-80">
               <Image
-                src="/images/foto_fundadora_profissional.png"
-                alt="Fundadora do Programa SAIL"
+                src="/images/teste.png"
+                alt="foto Dani"
                 fill
                 className="object-cover"
               />
@@ -72,12 +73,12 @@ export default function QuemSomos() {
       </section>
 
       <section className="mt-10 flex justify-center">
-        <button
-          className="cursor-pointer"
-          onClick={() => router.push('nossa-metodologia')}
+        <SketchButton
+          variant="orange"
+          onClick={() => router.push('/nossa-metodologia')}
         >
-          Conheça nossa Metodologia
-        </button>
+          Conheça nossa metodologia
+        </SketchButton>
       </section>
     </div>
   )

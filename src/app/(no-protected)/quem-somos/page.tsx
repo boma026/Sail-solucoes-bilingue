@@ -1,129 +1,85 @@
-export default function QuemSomosPage() {
+'use client'
+import { SketchButton } from '@/components/ui/buttons/sketch-button'
+import dynamic from 'next/dynamic'
+import Image from 'next/image'
+import { useRouter } from 'next/navigation'
+
+export default function QuemSomos() {
+  const router = useRouter()
+
+  const WiredCard = dynamic(
+    () => import('react-wired-elements').then((mod) => mod.WiredCard),
+    { ssr: false },
+  )
+
   return (
-    <div className="flex w-full flex-col gap-20 px-20 py-5">
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi error
-        provident omnis? Aliquam quidem nam eius doloremque quo architecto
-        quisquam deserunt provident. Earum, ipsa? Rerum, nostrum. Ut, alias.
-        Architecto, earum. Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Dignissimos quam recusandae sunt culpa facere, non ratione
-        repellendus impedit doloremque quos pariatur obcaecati labore quisquam
-        quia sequi eaque dolor iusto atque? Lorem ipsum dolor sit, amet
-        consectetur adipisicing elit. Dolorum et labore hic nobis. Hic
-        repudiandae laborum porro nam ipsum eaque, magni adipisci dolore neque
-        officia provident quibusdam minus debitis tempora. Lorem ipsum, dolor
-        sit amet consectetur adipisicing elit. Modi error provident omnis?
-        Aliquam quidem nam eius doloremque quo architecto quisquam deserunt
-        provident. Earum, ipsa? Rerum, nostrum. Ut, alias. Architecto, earum.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-        quam recusandae sunt culpa facere, non ratione repellendus impedit
-        doloremque quos pariatur obcaecati labore quisquam quia sequi eaque
-        dolor iusto atque? Lorem ipsum dolor sit, amet consectetur adipisicing
-        elit. Dolorum et labore hic nobis. Hic repudiandae laborum porro nam
-        ipsum eaque, magni adipisci dolore neque officia provident quibusdam
-        minus debitis tempora. Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Modi error provident omnis? Aliquam quidem nam eius
-        doloremque quo architecto quisquam deserunt provident. Earum, ipsa?
-        Rerum, nostrum. Ut, alias. Architecto, earum. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Dignissimos quam recusandae sunt culpa
-        facere, non ratione repellendus impedit doloremque quos pariatur
-        obcaecati labore quisquam quia sequi eaque dolor iusto atque? Lorem
-        ipsum dolor sit, amet consectetur adipisicing elit. Dolorum et labore
-        hic nobis. Hic repudiandae laborum porro nam ipsum eaque, magni adipisci
-        dolore neque officia provident quibusdam minus debitis tempora. Lorem
-        ipsum, dolor sit amet consectetur adipisicing elit. Modi error provident
-        omnis? Aliquam quidem nam eius doloremque quo architecto quisquam
-        deserunt provident. Earum, ipsa? Rerum, nostrum. Ut, alias. Architecto,
-        earum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Dignissimos quam recusandae sunt culpa facere, non ratione repellendus
-        impedit doloremque quos pariatur obcaecati labore quisquam quia sequi
-        eaque dolor iusto atque? Lorem ipsum dolor sit, amet consectetur
-        adipisicing elit. Dolorum et labore hic nobis. Hic repudiandae laborum
-        porro nam ipsum eaque, magni adipisci dolore neque officia provident
-        quibusdam minus debitis tempora.
-      </p>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi error
-        provident omnis? Aliquam quidem nam eius doloremque quo architecto
-        quisquam deserunt provident. Earum, ipsa? Rerum, nostrum. Ut, alias.
-        Architecto, earum. Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Dignissimos quam recusandae sunt culpa facere, non ratione
-        repellendus impedit doloremque quos pariatur obcaecati labore quisquam
-        quia sequi eaque dolor iusto atque? Lorem ipsum dolor sit, amet
-        consectetur adipisicing elit. Dolorum et labore hic nobis. Hic
-        repudiandae laborum porro nam ipsum eaque, magni adipisci dolore neque
-        officia provident quibusdam minus debitis tempora. Lorem ipsum, dolor
-        sit amet consectetur adipisicing elit. Modi error provident omnis?
-        Aliquam quidem nam eius doloremque quo architecto quisquam deserunt
-        provident. Earum, ipsa? Rerum, nostrum. Ut, alias. Architecto, earum.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-        quam recusandae sunt culpa facere, non ratione repellendus impedit
-        doloremque quos pariatur obcaecati labore quisquam quia sequi eaque
-        dolor iusto atque? Lorem ipsum dolor sit, amet consectetur adipisicing
-        elit. Dolorum et labore hic nobis. Hic repudiandae laborum porro nam
-        ipsum eaque, magni adipisci dolore neque officia provident quibusdam
-        minus debitis tempora. Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Modi error provident omnis? Aliquam quidem nam eius
-        doloremque quo architecto quisquam deserunt provident. Earum, ipsa?
-        Rerum, nostrum. Ut, alias. Architecto, earum. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Dignissimos quam recusandae sunt culpa
-        facere, non ratione repellendus impedit doloremque quos pariatur
-        obcaecati labore quisquam quia sequi eaque dolor iusto atque? Lorem
-        ipsum dolor sit, amet consectetur adipisicing elit. Dolorum et labore
-        hic nobis. Hic repudiandae laborum porro nam ipsum eaque, magni adipisci
-        dolore neque officia provident quibusdam minus debitis tempora. Lorem
-        ipsum, dolor sit amet consectetur adipisicing elit. Modi error provident
-        omnis? Aliquam quidem nam eius doloremque quo architecto quisquam
-        deserunt provident. Earum, ipsa? Rerum, nostrum. Ut, alias. Architecto,
-        earum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Dignissimos quam recusandae sunt culpa facere, non ratione repellendus
-        impedit doloremque quos pariatur obcaecati labore quisquam quia sequi
-        eaque dolor iusto atque? Lorem ipsum dolor sit, amet consectetur
-        adipisicing elit. Dolorum et labore hic nobis. Hic repudiandae laborum
-        porro nam ipsum eaque, magni adipisci dolore neque officia provident
-        quibusdam minus debitis tempora.
-      </p>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi error
-        provident omnis? Aliquam quidem nam eius doloremque quo architecto
-        quisquam deserunt provident. Earum, ipsa? Rerum, nostrum. Ut, alias.
-        Architecto, earum. Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Dignissimos quam recusandae sunt culpa facere, non ratione
-        repellendus impedit doloremque quos pariatur obcaecati labore quisquam
-        quia sequi eaque dolor iusto atque? Lorem ipsum dolor sit, amet
-        consectetur adipisicing elit. Dolorum et labore hic nobis. Hic
-        repudiandae laborum porro nam ipsum eaque, magni adipisci dolore neque
-        officia provident quibusdam minus debitis tempora. Lorem ipsum, dolor
-        sit amet consectetur adipisicing elit. Modi error provident omnis?
-        Aliquam quidem nam eius doloremque quo architecto quisquam deserunt
-        provident. Earum, ipsa? Rerum, nostrum. Ut, alias. Architecto, earum.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-        quam recusandae sunt culpa facere, non ratione repellendus impedit
-        doloremque quos pariatur obcaecati labore quisquam quia sequi eaque
-        dolor iusto atque? Lorem ipsum dolor sit, amet consectetur adipisicing
-        elit. Dolorum et labore hic nobis. Hic repudiandae laborum porro nam
-        ipsum eaque, magni adipisci dolore neque officia provident quibusdam
-        minus debitis tempora. Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Modi error provident omnis? Aliquam quidem nam eius
-        doloremque quo architecto quisquam deserunt provident. Earum, ipsa?
-        Rerum, nostrum. Ut, alias. Architecto, earum. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Dignissimos quam recusandae sunt culpa
-        facere, non ratione repellendus impedit doloremque quos pariatur
-        obcaecati labore quisquam quia sequi eaque dolor iusto atque? Lorem
-        ipsum dolor sit, amet consectetur adipisicing elit. Dolorum et labore
-        hic nobis. Hic repudiandae laborum porro nam ipsum eaque, magni adipisci
-        dolore neque officia provident quibusdam minus debitis tempora. Lorem
-        ipsum, dolor sit amet consectetur adipisicing elit. Modi error provident
-        omnis? Aliquam quidem nam eius doloremque quo architecto quisquam
-        deserunt provident. Earum, ipsa? Rerum, nostrum. Ut, alias. Architecto,
-        earum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Dignissimos quam recusandae sunt culpa facere, non ratione repellendus
-        impedit doloremque quos pariatur obcaecati labore quisquam quia sequi
-        eaque dolor iusto atque? Lorem ipsum dolor sit, amet consectetur
-        adipisicing elit. Dolorum et labore hic nobis. Hic repudiandae laborum
-        porro nam ipsum eaque, magni adipisci dolore neque officia provident
-        quibusdam minus debitis tempora.
-      </p>
+    <div className="flex w-full flex-col gap-12 bg-[#FDFDFD] px-10 pt-10 pb-10 md:px-20">
+      <section className="flex flex-col items-center gap-4">
+        <h1 className="text-center text-4xl font-semibold">Nossa História</h1>
+        <div className="h-1 w-24 rounded-full bg-blue-300" />
+      </section>
+
+      <section className="flex flex-col items-center justify-center gap-10 lg:flex-row lg:gap-20">
+        <div className="flex-0">
+          <WiredCard elevation={2} className="p-1">
+            <div className="relative h-64 w-64 overflow-hidden rounded-full border-4 border-dashed border-gray-200 md:h-80 md:w-80">
+              <Image
+                src="/images/teste.png"
+                alt="foto Dani"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </WiredCard>
+        </div>
+
+        <div className="flex max-w-2xl flex-col gap-6">
+          <p className="text-lg leading-relaxed text-gray-700">
+            O programa <strong>SAIL</strong> nasceu da vontade de transformar o
+            aprendizado de uma segunda língua em uma experiência lúdica e
+            natural. Baseado na metáfora de &quot;velejar&quot; (Sail),
+            acreditamos que cada criança deve ter as ferramentas para guiar seu
+            próprio barco no mar do conhecimento.
+          </p>
+          <p className="text-lg leading-relaxed text-gray-700">
+            Nossa jornada é construída com afeto, utilizando materiais de
+            excelência e uma metodologia que respeita o tempo de cada pequeno
+            navegador.
+          </p>
+        </div>
+      </section>
+
+      <section className="mt-10 flex flex-col items-center gap-8">
+        <h2 className="text-2xl font-medium">O Programa em Ação</h2>
+
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+          {[1, 2, 3].map((i) => (
+            <WiredCard
+              key={i}
+              elevation={1}
+              className="rotate-1 p-2 odd:-rotate-2"
+            >
+              <div className="relative h-48 w-64 overflow-hidden rounded-sm">
+                <Image
+                  src={`/images/rotina_${i}.png`}
+                  alt="Rotina SAIL com crianças"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </WiredCard>
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-10 flex justify-center">
+        <SketchButton
+          variant="orange"
+          onClick={() => router.push('/nossa-metodologia')}
+        >
+          Conheça nossa metodologia
+        </SketchButton>
+      </section>
     </div>
   )
 }

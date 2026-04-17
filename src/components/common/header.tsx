@@ -20,7 +20,7 @@ const NAV_LINKS = [
     href: '/nossa-metodologia',
     color: 'sail-green',
   },
-  { label: 'Contato', href: '#contact', color: 'sail-purple' },
+  { label: 'Contato', href: '/contato', color: 'sail-purple' },
 ]
 
 export function Header() {
